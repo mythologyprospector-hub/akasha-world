@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["repo_name", "role", "layer"],
+  "properties": {
+    "repo_name": {"type":"string"},
+    "role": {"type":"string"},
+    "layer": {"type":"string"},
+    "inputs": {"type":"array"},
+    "outputs": {"type":"array"}
+  }
+}
