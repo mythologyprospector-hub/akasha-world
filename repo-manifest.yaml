@@ -1,76 +1,33 @@
 repo:
-  name: akasha-forge
+  name: akasha-world
   ecosystem: akasha
   version: 0.1.0
-  status: experimental
+  status: foundational
 
 identity:
-  role: forge
-  layer: creation
+  role: ontology
+  layer: foundation
   description: >
-    Tool synthesis engine responsible for generating and evolving
-    software artifacts within the Akasha ecosystem.
+    Defines naming conventions, repository schemas, and structural
+    rules for the Akasha ecosystem.
 
 ownership:
   steward: human
   approval_required: true
-  governance: akasha-axioms
 
 interfaces:
   consumes:
-    - akasha-world
-    - akasha-constellation
-    - akasha-lens
-    - akasha-discovery
-
+    - akasha-axioms
   produces:
-    - generated-tools
-    - repo-mutations
-    - alignment-patches
+    - naming_conventions
+    - repo_schemas
+    - structural_templates
 
 capabilities:
-  - tool_generation
-  - code_synthesis
-  - repo_transformation
-  - template_expansion
-
-inputs:
-  artifact_types:
-    - source_repo
-    - binary
-    - manifest
-    - ontology_model
-
-outputs:
-  artifact_types:
-    - repo
-    - source_code
-    - templates
-    - patches
+  - ontology_definition
+  - structural_templates
+  - naming_standards
 
 alignment:
   axioms_required: true
   canonical_structure: true
-  naming_convention: akasha-world/NAMING.md
-
-reflection:
-  self_describing: true
-  drift_detection: true
-  quine_capable: true
-
-dependencies:
-  required_repos:
-    - akasha-axioms
-    - akasha-world
-    - akasha-constellation
-
-execution:
-  runtime: human-in-the-loop
-  automation_level: assisted
-
-metadata:
-  created_by: akasha
-  maintained_by: steward
-  purpose: >
-    Enable structured creation and transformation of tools and
-    repositories within the Akasha ecosystem.
