@@ -1,0 +1,33 @@
+primitives:
+
+  entity:
+    class: object
+
+  system:
+    class: object
+
+  field:
+    class: object
+
+states:
+
+  state:
+  phase:
+  equilibrium:
+  instability:
+  attractor:
+
+processes:
+
+  process:
+  transition:
+  flow:
+  coupling:
+  emergence:
+
+patterns:
+
+  constraint:
+  symmetry:
+  conservation:
+  threshold:
