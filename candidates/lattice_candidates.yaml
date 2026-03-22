@@ -1,0 +1,29 @@
+candidates:
+
+  critical_transition:
+    phase: system
+    stability: unstable
+    constraint: strong
+    process: transform
+    description: point where system instability forces structural change
+
+  volatile_transition:
+    phase: transition
+    stability: unstable
+    constraint: weak
+    process: transform
+    description: unstable transition that amplifies small disturbances
+
+  recovery_boundary:
+    phase: system
+    stability: unstable
+    constraint: weak
+    process: converge
+    description: unstable state that collapses back toward equilibrium
+
+  constraint_barrier:
+    phase: system
+    stability: unstable
+    constraint: strong
+    process: none
+    description: system trapped by strong constraint preventing transition
