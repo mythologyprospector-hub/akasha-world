@@ -1,33 +1,46 @@
-primitives:
+schema_version: 1
 
-  entity:
-    class: object
-
-  system:
-    class: object
-
-  field:
-    class: object
-
-states:
+node_types:
 
   state:
-  phase:
-  equilibrium:
-  instability:
-  attractor:
-
-processes:
+    description: stable condition of a system
+    expects_incoming:
+      - transitions_to
+    expects_outgoing:
+      - transitions_to
+      - tends_toward
 
   process:
-  transition:
-  flow:
-  coupling:
-  emergence:
-
-patterns:
+    description: transformation between states
+    expects_incoming:
+      - transitions_to
+    expects_outgoing:
+      - transitions_to
 
   constraint:
-  symmetry:
-  conservation:
-  threshold:
+    description: boundary condition or limiting rule
+    expects_outgoing:
+      - constrains
+
+  attractor:
+    description: terminal convergence point
+    allows_outgoing: []
+
+  observer:
+    description: measurement or perception entity
+    expects_outgoing:
+      - observes
+
+relation_types:
+
+  transitions_to:
+    description: state change pathway
+
+  tends_toward:
+    description: asymptotic movement toward stability
+
+  constrains:
+    description: limiting influence
+
+  observes:
+    description: measurement relation
