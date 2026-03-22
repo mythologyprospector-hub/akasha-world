@@ -44,3 +44,13 @@ relation_types:
 
   observes:
     description: measurement relation
+
+relation_aliases:
+  transitions_to:
+    - emerges_from
+    - recovers_to
+  tends_toward:
+    - settles_into
+  constrains:
+    - stabilizes
+    - destabilizes
