@@ -3,31 +3,36 @@ repo:
   ecosystem: akasha
   version: 0.1.0
   status: foundational
-
 identity:
   role: ontology
   layer: foundation
-  description: >
-    Defines naming conventions, repository schemas, and structural
-    rules for the Akasha ecosystem.
+  description: 'Defines naming conventions, repository schemas, and structural rules
+    for the Akasha ecosystem.
 
+    '
 ownership:
   steward: human
   approval_required: true
-
 interfaces:
   consumes:
-    - akasha-axioms
+  - akasha-axioms
   produces:
-    - naming_conventions
-    - repo_schemas
-    - structural_templates
-
-capabilities:
-  - ontology_definition
+  - naming_conventions
+  - repo_schemas
   - structural_templates
-  - naming_standards
-
+capabilities:
+- ontology_definition
+- structural_templates
+- naming_standards
 alignment:
   axioms_required: true
   canonical_structure: true
+name: akasha-world
+type: module
+status:
+  maturity: experimental
+  confidence: low
+  active: true
+role: concept
+domain: systems
+depends_on: []
