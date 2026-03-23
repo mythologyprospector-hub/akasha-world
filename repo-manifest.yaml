@@ -35,4 +35,5 @@ status:
   active: true
 role: ontology
 domain: systems
-depends_on: []
+depends_on:
+- akasha-graph-phases
