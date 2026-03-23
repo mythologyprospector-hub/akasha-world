@@ -1,0 +1,79 @@
+axes:
+  phase:
+    - system
+    - transition
+    - attractor
+
+  stability:
+    - unstable
+    - dynamic
+    - stable
+    - terminal
+
+  constraint:
+    - none
+    - weak
+    - strong
+    - maximal
+
+  process:
+    - none
+    - transform
+    - converge
+
+nodes:
+  phase:
+    phase: system
+    stability: dynamic
+    constraint: none
+    process: none
+
+  instability:
+    phase: system
+    stability: unstable
+    constraint: weak
+    process: transform
+
+  transition:
+    phase: transition
+    stability: dynamic
+    constraint: none
+    process: transform
+
+  equilibrium:
+    phase: system
+    stability: stable
+    constraint: strong
+    process: none
+
+  attractor:
+    phase: attractor
+    stability: terminal
+    constraint: maximal
+    process: converge
+
+rules:
+  invalid:
+    - phase: attractor
+      process: transform
+
+    - phase: attractor
+      stability: unstable
+
+    - phase: attractor
+      stability: dynamic
+
+    - phase: system
+      stability: terminal
+
+    - phase: transition
+      process: none
+
+    - phase: transition
+      stability: stable
+
+    - phase: transition
+      stability: terminal
+
+    - process: converge
+      constraint: none

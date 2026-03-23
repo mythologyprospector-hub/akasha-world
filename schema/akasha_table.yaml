@@ -49,6 +49,7 @@ relation_aliases:
   transitions_to:
     - emerges_from
     - recovers_to
+    - transitions_to_instability
   tends_toward:
     - settles_into
   constrains:
