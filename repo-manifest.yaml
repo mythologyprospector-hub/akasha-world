@@ -33,6 +33,6 @@ status:
   maturity: experimental
   confidence: low
   active: true
-role: concept
+role: ontology
 domain: systems
 depends_on: []
