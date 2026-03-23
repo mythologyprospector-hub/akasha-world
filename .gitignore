@@ -1,0 +1,33 @@
+# =============================
+# Akasha ecosystem gitignore
+# =============================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# build artifacts
+build/
+dist/
+
+# local debug
+*.log
+*.tmp
+
+# backups created by patchers
+*.bak
+*.bak.*
+
+# discovery artifacts
+tree.txt
+output.txt
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# editor junk
+*.swp
+*.swo
